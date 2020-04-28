@@ -69,4 +69,15 @@ public class Curso {
     public void setListaAlumnos(List<Alumno> listaAlumnos) {
         this.listaAlumnos = listaAlumnos;
     }
+
+    public Boolean agregarUnAlumno(Alumno unAlumno) {
+
+        return listaAlumnos.size() < cupoAlumnos;
+    }
+
+    public void eliminarAlumno(Alumno unAlumno) {
+
+        this.listaAlumnos.remove(unAlumno);
+
+    }
 }
