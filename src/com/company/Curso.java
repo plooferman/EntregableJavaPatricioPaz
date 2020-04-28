@@ -13,6 +13,12 @@ public class Curso {
     private Integer cupoAlumnos;
     private List<Alumno> listaAlumnos;
 
+    public Curso(String nombreCurso, Integer codigoCurso, Integer cupoAlumnos) {
+        this.nombreCurso = nombreCurso;
+        this.codigoCurso = codigoCurso;
+        this.cupoAlumnos = cupoAlumnos;
+    }
+
     public Curso(String nombreCurso, Integer codigoCurso, ProfesorTitular profesorTitular, ProfesorAdjunto profesorAdjunto, Integer cupoAlumnos, List<Alumno> listaAlumnos) {
         this.nombreCurso = nombreCurso;
         this.codigoCurso = codigoCurso;

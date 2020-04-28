@@ -4,8 +4,8 @@ public class ProfesorAdjunto extends Profesor {
 
     private Integer horasConsulta;
 
-    public ProfesorAdjunto(String nombreProfesor, String apellidoProfesor, Integer antiguedadProfesor, Integer codigoProfesor, Integer horasConsulta) {
-        super(nombreProfesor, apellidoProfesor, antiguedadProfesor, codigoProfesor);
+    public ProfesorAdjunto(String nombreProfesor, String apellidoProfesor, Integer codigoProfesor, Integer horasConsulta) {
+        super(nombreProfesor, apellidoProfesor, codigoProfesor);
     }
 
     public Integer getHorasConsulta() {

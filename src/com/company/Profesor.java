@@ -7,10 +7,9 @@ public class Profesor {
     private Integer antiguedadProfesor;
     private Integer codigoProfesor;
 
-    public Profesor(String nombreProfesor, String apellidoProfesor, Integer antiguedadProfesor, Integer codigoProfesor) {
+    public Profesor(String nombreProfesor, String apellidoProfesor, Integer codigoProfesor) {
         this.nombreProfesor = nombreProfesor;
         this.apellidoProfesor = apellidoProfesor;
-        this.antiguedadProfesor = antiguedadProfesor;
         this.codigoProfesor = codigoProfesor;
     }
 

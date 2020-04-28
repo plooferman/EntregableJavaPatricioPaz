@@ -4,8 +4,8 @@ public class ProfesorTitular extends Profesor {
 
     private String especialidadProfesor;
 
-    public ProfesorTitular(String nombreProfesor, String apellidoProfesor, Integer antiguedadProfesor, Integer codigoProfesor, String especialidadProfesor) {
-        super(nombreProfesor, apellidoProfesor, antiguedadProfesor, codigoProfesor);
+    public ProfesorTitular(String nombreProfesor, String apellidoProfesor, Integer codigoProfesor, String especialidadProfesor) {
+        super(nombreProfesor, apellidoProfesor, codigoProfesor);
     }
 
     public String getEspecialidadProfesor() {
