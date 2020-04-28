@@ -1,6 +1,7 @@
 package com.company;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Curso {
@@ -17,6 +18,7 @@ public class Curso {
         this.nombreCurso = nombreCurso;
         this.codigoCurso = codigoCurso;
         this.cupoAlumnos = cupoAlumnos;
+        this.listaAlumnos = new ArrayList<>();
     }
 
     public Curso(String nombreCurso, Integer codigoCurso, ProfesorTitular profesorTitular, ProfesorAdjunto profesorAdjunto, Integer cupoAlumnos, List<Alumno> listaAlumnos) {
@@ -78,7 +80,13 @@ public class Curso {
 
     public Boolean agregarUnAlumno(Alumno unAlumno) {
 
-        return listaAlumnos.size() < cupoAlumnos;
+        Boolean ok = true;
+        if (this.listaAlumnos.size() < this.cupoAlumnos) {
+            this.listaAlumnos.add(unAlumno);
+        } else {
+            ok = false;
+        }
+        return ok;
     }
 
     public void eliminarAlumno(Alumno unAlumno) {
