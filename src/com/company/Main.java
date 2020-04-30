@@ -34,10 +34,16 @@ public class Main {
         digitalHouseManager.inscribirAlumno(10001, 20002);
         digitalHouseManager.inscribirAlumno(10002, 20002);
         digitalHouseManager.inscribirAlumno(10003, 20002);
-        
+
         digitalHouseManager.bajaProfesor(102);
         digitalHouseManager.bajaCurso(20001);
 
 
     }
 }
+
+/*        // Parte K. Para buscar en qué cursos está inscripto el alumno, usaría el método BuscarAlumno
+        en la clase DigitalHouseManager, para que me devuelva un objeto Alumno y crearía un nuevo método
+        en DigitalHouseManager para recorrer la lista de inscripciones, buscando en qué curso está inscripto ese Alumno.
+        Si coincide el alumno, guardo ese curso en un nuevo array, porque podría estar inscripto en
+        más de un curso y luego hago sout de ese array.*/
